@@ -23,8 +23,8 @@ object MockData {
 
     private fun getFragmentTitle(position: Int): String {
         return when (position) {
-            0 -> ""
-            else -> ""
+            0 -> "1"
+            else -> "2"
         }
     }
 }
