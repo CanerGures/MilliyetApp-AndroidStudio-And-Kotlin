@@ -23,7 +23,13 @@ object MockData {
 
     private fun getFragmentTitle(position: Int): String {
         return when (position) {
-            0 -> "1"
+            0 -> "Anasayfa"
+            1 -> "Yazarlar"
+            2 -> "Gündem"
+            3 -> "Ekonomi"
+            4 -> "Spor"
+            5 -> "Cadde"
+            6 -> "Eğitim"
             else -> "2"
         }
     }
