@@ -4,10 +4,11 @@ import com.example.milliyetapp.model.FragmentModel
 import com.example.milliyetapp.ui.NewsFragment
 
 object MockData {
-    fun getNewsCategoryFragment(fragmentSize: Int): List<FragmentModel> {
+    private const val newsCategorySize = 7
+    fun getNewsCategoryFragment(): List<FragmentModel> {
         val fragmentList = ArrayList<FragmentModel>()
 
-        repeat(fragmentSize) { position ->
+        repeat(newsCategorySize) { position ->
             val newsFragment = NewsFragment()
 
             val fragmentModel = FragmentModel(
