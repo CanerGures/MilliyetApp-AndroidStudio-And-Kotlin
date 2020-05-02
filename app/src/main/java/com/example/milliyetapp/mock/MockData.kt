@@ -1,5 +1,6 @@
 package com.example.milliyetapp.mock
 
+import com.example.milliyetapp.model.BigNewsModel
 import com.example.milliyetapp.model.FragmentModel
 import com.example.milliyetapp.ui.NewsFragment
 
@@ -33,5 +34,17 @@ object MockData {
             6 -> "Eğitim"
             else -> "2"
         }
+    }
+
+    fun getNewsList(newListSize: Int): List<BigNewsModel> {
+        val bigNewsList = ArrayList<BigNewsModel>()
+        repeat(newListSize) {
+            val bigNewsModel = BigNewsModel(
+                "https://i4.hurimg.com/i/hurriyet/75/900x350/5eacf215d3806c22c88d4b6e.jpg",
+                "Ertelendi! Kolay Alınmış Bir Karar Değil"
+            )
+            bigNewsList.add(bigNewsModel)
+        }
+        return bigNewsList
     }
 }
