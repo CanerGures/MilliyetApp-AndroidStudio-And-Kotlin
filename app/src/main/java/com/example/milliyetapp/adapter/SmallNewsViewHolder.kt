@@ -8,9 +8,9 @@ import com.example.milliyetapp.R
 import com.example.milliyetapp.model.NewsModel
 import kotlinx.android.synthetic.main.adapter_item_bignews.view.*
 
-class BigNewsViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
+class SmallNewsViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
     LayoutInflater.from(parent.context).inflate(
-        R.layout.adapter_item_bignews,
+        R.layout.adapter_item_smallnews,
         parent,
         false
     )
